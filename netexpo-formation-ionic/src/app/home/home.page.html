@@ -13,9 +13,9 @@
   </ion-header>
   <div id="container">
     <app-help [message]="nom" (logged)="isLog($event)"></app-help>
-    <app-menu [message]="nom"></app-menu>
-    <app-body [message]="nom"></app-body>
-    <app-login [message]="nom"></app-login>
-    <app-footer [message]="nom"></app-footer>
+    <app-menu [message]="nom" (logged)="isLog($event)"></app-menu>
+    <app-body [message]="nom" (logged)="isLog($event)"></app-body>
+    <app-login [message]="nom" (logged)="isLog($event)"></app-login>
+    <app-footer [message]="nom" (logged)="isLog($event)"></app-footer>
   </div>
 </ion-content>
