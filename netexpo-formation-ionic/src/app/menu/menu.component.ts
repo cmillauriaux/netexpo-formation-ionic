@@ -12,18 +12,13 @@ export class MenuComponent {
 
   ngOnInit() {}
 
-  openFirst() {
-    this.menu.enable(true, 'first');
-    this.menu.open('first');
+  redirect(){
+    alert('Bye Bye')
+    window.location.replace("https://lavomasque.fr/");
   }
 
-  openEnd() {
-    this.menu.open('end');
-  }
-
-  openCustom() {
-    this.menu.enable(true, 'custom');
-    this.menu.open('custom');
+  call(){
+    window.open('tel:900300400');
   }
 
 }
