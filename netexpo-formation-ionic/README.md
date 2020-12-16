@@ -10,3 +10,4 @@
 
 - Pour générer un composant `ng g`et sélectionner `component`
 - Attention à bien determiner ce qui est un composant générique (à la racine de app) et un composant local (embarqué dans une page)
+- Envoyer les composants sur le git
