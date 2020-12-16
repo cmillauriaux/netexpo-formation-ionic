@@ -17,7 +17,7 @@ import { BodyComponent } from './body/body.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
   ],
   declarations: [HomePage, FooterComponent, LoginComponent, MenuComponent, HelpComponent, BodyComponent]
 
