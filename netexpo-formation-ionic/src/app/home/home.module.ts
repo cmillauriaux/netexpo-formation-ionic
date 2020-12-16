@@ -9,6 +9,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { HelpComponent } from './help/help.component';
 import { MenuComponent } from '../menu/menu.component';
 import { LoginComponent } from './login/login.component';
+import { BodyComponent } from './body/body.component';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { LoginComponent } from './login/login.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, FooterComponent, LoginComponent, MenuComponent]
+  declarations: [HomePage, FooterComponent, LoginComponent, MenuComponent, HelpComponent, BodyComponent]
 
 })
 export class HomePageModule {}
