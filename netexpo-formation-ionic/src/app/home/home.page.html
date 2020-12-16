@@ -12,7 +12,7 @@
     </ion-toolbar>
   </ion-header>
   <div id="container">
-    <app-help [message]="nom"></app-help>
+    <app-help [message]="nom" (logged)="isLog($event)"></app-help>
     <app-menu [message]="nom"></app-menu>
     <app-body [message]="nom"></app-body>
     <app-login [message]="nom"></app-login>

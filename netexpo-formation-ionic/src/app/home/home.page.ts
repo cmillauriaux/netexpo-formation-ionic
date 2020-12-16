@@ -7,11 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   nom: string = "Cédric";
-  constructor() {
-    setInterval(() => {
-      this.nom = this.makeid(5);
-    }, 2000);
-  }
+  constructor() {}
 
   makeid(length) {
     var result = '';
@@ -21,6 +17,14 @@ export class HomePage {
       result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
+  }
+
+  isLog(userIsLogged) {
+    if (userIsLogged) {
+      this.nom = this.makeid(5);
+    } else {
+      this.nom = "DISCONNECTED";
+    }
   }
 
 }
