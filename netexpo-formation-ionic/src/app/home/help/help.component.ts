@@ -17,5 +17,7 @@ export class HelpComponent implements OnInit {
   login() {
     this.logged.emit(true);
   }
-
+logout(){
+  this.logged.emit(false);
+}
 }
