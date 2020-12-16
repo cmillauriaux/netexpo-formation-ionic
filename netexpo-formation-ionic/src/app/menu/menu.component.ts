@@ -6,7 +6,7 @@ import { MenuController } from '@ionic/angular';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent  {
+export class MenuComponent {
 
   constructor(private menu: MenuController) { }
 
