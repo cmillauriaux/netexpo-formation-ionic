@@ -18,10 +18,7 @@ export class MenuComponent {
       this.key1 = this.makeid(15);
       this.key2 = this.makeid(15);
       this.key3 = this.makeid(15);
-    }, 50);
-
-   
-
+    }, 1);
    }
 
    makeid(length) {
