@@ -8,28 +8,9 @@ import { MenuController } from '@ionic/angular';
 })
 export class MenuComponent {
 
-  @Input() key1: string;
-  @Input() key2: string;
-  @Input() key3: string;
+  @Input() message: string;
 
-  constructor(private menu: MenuController) {
 
-    setInterval(() => {
-      this.key1 = this.makeid(15);
-      this.key2 = this.makeid(15);
-      this.key3 = this.makeid(15);
-    }, 1);
-   }
-
-   makeid(length) {
-    var result = '';
-    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for (var i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-  }
 
   ngOnInit() {}
 
