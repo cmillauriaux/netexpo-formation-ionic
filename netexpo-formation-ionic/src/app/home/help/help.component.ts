@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-help',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./help.component.scss'],
 })
 export class HelpComponent implements OnInit {
+
+  @Input() message: string;
 
   constructor() { }
 

@@ -12,10 +12,10 @@
     </ion-toolbar>
   </ion-header>
   <div id="container">
-    <app-help></app-help>
-    <app-menu></app-menu>
-    <app-body></app-body>
-    <app-login></app-login>
-    <app-footer></app-footer>
+    <app-help [message]="nom"></app-help>
+    <app-menu [message]="nom"></app-menu>
+    <app-body [message]="nom"></app-body>
+    <app-login [message]="nom"></app-login>
+    <app-footer [message]="nom"></app-footer>
   </div>
 </ion-content>
