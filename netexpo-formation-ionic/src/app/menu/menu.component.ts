@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 
 @Component({
@@ -9,6 +9,10 @@ import { MenuController } from '@ionic/angular';
 export class MenuComponent {
 
   @Input() message: string;
+  
+  @Output() logged = new EventEmitter<boolean>();
+
+  nom: string = "Arthur";
 
 
 
@@ -21,6 +25,43 @@ export class MenuComponent {
 
   call(){
     window.open('tel:900300400');
+  }
+
+  isLog(userIsLogged) {
+    if (userIsLogged) {
+      this.nom = this.makeid(25);
+    } else {
+      this.nom = "DISCONNECTED";
+    }
+  }
+
+  
+  isLogout(userIsLogged) {
+    if (userIsLogged) {
+      this.nom = this.makeid(25);
+    } else {
+      this.nom = "Connected";
+    }
+  }
+
+  login() {
+    this.logged.emit(true);
+  }
+
+  logout() {
+    this.logged.emit(false);
+  }
+
+
+
+  makeid(length) {
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
   }
 
 }
