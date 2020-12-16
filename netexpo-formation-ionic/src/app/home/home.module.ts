@@ -16,6 +16,7 @@ import { MenuComponent } from '../menu/menu.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, HelpComponent, MenuComponent]
+
+  declarations: [HomePage, LoginComponent,MenuComponent ]
 })
 export class HomePageModule {}
