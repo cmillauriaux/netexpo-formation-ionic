@@ -7,8 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HelpComponent implements OnInit {
 
-  
-  
+  @Input() message: string;
 
   constructor() { }
 
